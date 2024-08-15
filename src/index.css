@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.primary-button {
+  cursor: pointer;
+  padding: 14px 15px;
+  border: 1px solid #FF520E;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  display: block;
+  text-align: center;
+}
+
+.secondary-button {
+  cursor: pointer;
+  padding: 14px 15px;
+  border: 1px solid #FF520E;
+  border-radius: 10px;
+  background-color: #FF520E;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  display: block;
+  text-align: center;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1536px;
+  margin-inline: auto;
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0,0,0,0),
+    rgba(0,0,0,1) 10%,
+    rgba(0,0,0,1) 90%,
+    rgba(0,0,0,0)
+  );
+}
+
+.item {
+  width: 100px;
+  height: 45px;
+  position: absolute;
+  left: max(calc(100px * 6), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.item1 {
+  animation-delay: calc(20s / 6 * (6 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(20s / 6 * (6 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(20s / 6 * (6 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(20s / 6 * (6 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(20s / 6 * (6 - 5) * -1);
+}
+
+.item6  {
+  animation-delay: calc(20s / 6 * (6 - 6) * -1);
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -100px;
+  }
+}
+
+.shade {
+  background: linear-gradient(to bottom, rgba(0,30,255,1) 0%,rgba(13,13,13,1) 100%);
+}
+
+.gradient {
+  background: -webkit-radial-gradient(circle at 50% 100%, #ff520e 0%, #0f0f0f 50% #0f0f0f 100%);
+  background: radial-gradient(circle at 50% 100%, rgba(255, 82, 14, 0.5) 0%, #0f0f0f 60%, #0f0f0f 100%);
+  backdrop-filter:blur(100px);
+}
+
+.card-slider {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  
+}
+
+.card-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.App {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 320px;
+  margin: auto;
+  text-align: center;
+  border-radius: 1rem;
+  
+}
+
+.people-image {
+  width: 368px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.footer-button {
+    cursor: pointer;
+    padding: 10px 14px;
+    border: 1px solid #FF520E;
+    border-radius: 10px;
+    background-color: #FF520E;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    display: block;
+}
+
+.gradient2 {
+  background: -webkit-radial-gradient(circle at 50% 100%, #ff520e 0%, #0D0D0D 50% #0D0D0D 100%);
+  background: radial-gradient(circle at 50% 100%, rgba(255, 82, 14, 0.5) 0%, #0D0D0D 60%, #0D0D0D 100%);
+  backdrop-filter:blur(100px);
+}
+
+.cursor {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+}
