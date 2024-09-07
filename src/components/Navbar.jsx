@@ -24,7 +24,7 @@ const Navbar = () => {
 
 
       <div>
-        <a href='https://calendly.com/' target="_blank">
+        <a href='https://cal.com/arcui/uri.co-discover-call' target="_blank">
         <button type='button' className='primary-button font-inter transition-all hover:text-[#FF520E] text-sm'>Book a call</button>
         </a>
       </div>

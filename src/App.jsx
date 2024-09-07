@@ -1,4 +1,4 @@
-import { Navbar, Home, About, Process, Services, Team, Faqs, Footer, Cursor} from "./components"
+import { Navbar, Home, About, Process, Services, Faqs, Footer, Cursor, Headline} from "./components"
 
 
 function App() {
@@ -9,9 +9,9 @@ function App() {
         <Navbar/>
         <Home/>
         <About/>
+        <Headline/>
         <Process/>
         <Services/>
-        <Team/>
         <Faqs/>
         <Footer/>
     </main>
